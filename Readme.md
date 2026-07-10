@@ -16,7 +16,7 @@
 - Centered bold multi-line heading ("Code. _Connect_. Create") — style one word
   (e.g. "Connect") in italics for emphasis
 - Centered supporting paragraph text below the heading
-- One "Register Now" button, centered, below the text
+- One "Register Now" button, centered, below the text.
 
 ---
 

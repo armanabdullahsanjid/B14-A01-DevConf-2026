@@ -1,0 +1,29 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 80px;
+  align-items: center;
+  background-color: rgb(255, 255, 255);
+}
+.menu {
+  display: flex;
+  gap: 12px;
+  list-style: none;
+}
+ul li a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+}
+
+.common-btn {
+  background-color: blue;
+  border: none;
+  color: white;
+  padding: 10px 18px;
+  font-size: 15px;
+  border-radius: 5px;
+}
