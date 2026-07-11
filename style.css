@@ -109,6 +109,7 @@ header {
   display: block;
   margin-top: 20px;
 }
+
 li::marker {
   color: rgba(37, 99, 235, 1);
 }
@@ -121,7 +122,7 @@ li::marker {
   align-items: center;
   margin: auto;
   gap: 20px;
-  padding-bottom: 200px;
+  padding-bottom: 70px;
 }
 
 .pricing-heading {
@@ -226,6 +227,218 @@ p {
 .pricing-container h3 {
   font-size: 35px;
 }
+
+/* ===============================
+      Venue & Experience
+==================================*/
+
+.venue-section {
+  background: #ffffff;
+  padding: 70px 20px 90px;
+}
+
+/* Heading */
+
+.venue-title {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 48px;
+  font-weight: 700;
+  color: #111827;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.venue-subtitle {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 17px;
+  color: #6b7280;
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto 60px;
+  line-height: 1.7;
+}
+
+/* Main Layout */
+
+.venue-wrapper {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 40px;
+  align-items: center;
+}
+
+/* Left Card */
+
+.venue-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 22px;
+  transition: 0.35s ease;
+  cursor: pointer;
+}
+
+.venue-card img {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+  display: block;
+}
+
+.venue-card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 25px 45px rgba(0, 0, 0, 0.18);
+}
+
+/* Glass Overlay */
+
+.venue-overlay {
+  position: absolute;
+  left: 20px;
+  right: 20px;
+  bottom: 20px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 18px 22px;
+
+  background: rgba(255, 255, 255, 0.18);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 18px;
+}
+
+.venue-overlay h3 {
+  color: #ffffff;
+  font-size: 22px;
+  margin-bottom: 6px;
+}
+
+.venue-overlay p {
+  color: #f5f5f5;
+  font-size: 15px;
+}
+
+/* Button */
+
+.venue-btn {
+  text-decoration: none;
+  background: rgba(37, 99, 235, 1);
+  color: #ffffff;
+  padding: 12px 22px;
+  border-radius: 10px;
+  font-weight: 600;
+  transition: 0.3s ease;
+}
+
+.venue-btn:hover {
+  background: #1d4ed8;
+}
+
+/* Right Side */
+
+.experience-content {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+
+/* Experience Card */
+
+.experience-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+
+  padding: 28px;
+
+  border: 1px solid #e5e7eb;
+  border-radius: 18px;
+
+  transition: 0.3s ease;
+  background: #ffffff;
+}
+
+.experience-card:hover {
+  background: #f4f8ff;
+  transform: translateY(-4px);
+}
+
+.experience-icon {
+  width: 65px;
+  height: 65px;
+  min-width: 65px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 50%;
+  background: rgba(37, 99, 235, 0.12);
+}
+
+.experience-icon i {
+  color: rgba(37, 99, 235, 1);
+  font-size: 24px;
+}
+
+.experience-card h4 {
+  font-size: 24px;
+  margin-bottom: 8px;
+  color: #111827;
+}
+
+.experience-card p {
+  color: #6b7280;
+  line-height: 1.7;
+}
+
+/* Responsive */
+
+@media (max-width: 992px) {
+  .venue-wrapper {
+    grid-template-columns: 1fr;
+  }
+
+  .venue-card img {
+    height: 420px;
+  }
+}
+
+@media (max-width: 768px) {
+  .venue-section {
+    padding: 60px 15px;
+  }
+
+  .venue-title {
+    font-size: 36px;
+  }
+
+  .venue-subtitle {
+    font-size: 16px;
+    margin-bottom: 40px;
+  }
+
+  .venue-overlay {
+    flex-direction: column;
+    text-align: center;
+    gap: 15px;
+  }
+
+  .venue-card img {
+    height: 350px;
+  }
+
+  .experience-card {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+}
+
 /* footer */
 footer {
   background-color: rgba(13, 27, 42, 1);
@@ -234,7 +447,7 @@ footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 50px 40px;
+  padding: 10px 40px;
 }
 .span {
   display: flex;
@@ -245,6 +458,6 @@ footer {
   gap: 15px;
 }
 .copyright p {
-  padding: 20px 15px;
+  padding: 10px 15px;
   align-items: center;
 }
