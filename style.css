@@ -15,7 +15,7 @@ nav {
 .menu {
   display: flex;
   justify-content: center;
-  gap: 20px;
+  gap: 50px;
   list-style: none;
 }
 ul li a {
@@ -221,4 +221,26 @@ p {
 }
 .pricing-container h3 {
   font-size: 35px;
+}
+/* footer */
+footer {
+  background-color: rgba(13, 27, 42, 1);
+}
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 40px;
+}
+.span {
+  display: flex;
+}
+.footer-right {
+  color: white;
+  display: flex;
+  gap: 15px;
+}
+.copyright p {
+  padding: 10px 15px;
+  align-items: center;
 }
