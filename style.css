@@ -109,6 +109,9 @@ header {
   display: block;
   margin-top: 20px;
 }
+li::marker {
+  color: rgba(37, 99, 235, 1);
+}
 /* pricing section */
 
 .pricing-container {
@@ -206,6 +209,7 @@ header {
   border-radius: 5px;
   margin-top: auto;
 }
+
 .pricing-heading h2 {
   font-size: 50px;
 }
@@ -230,7 +234,7 @@ footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 40px;
+  padding: 50px 40px;
 }
 .span {
   display: flex;
@@ -241,6 +245,6 @@ footer {
   gap: 15px;
 }
 .copyright p {
-  padding: 10px 15px;
+  padding: 20px 15px;
   align-items: center;
 }
